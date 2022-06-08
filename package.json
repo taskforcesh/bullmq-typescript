@@ -1,0 +1,32 @@
+{
+  "name": "bullmq-typescript",
+  "version": "1.0.0",
+  "description": "BullMQ Example for Typescript",
+  "license": "MIT",
+  "bin": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node './dist/index.js'",
+    "dev": "tsc-watch --onSuccess \"node ./dist/index.js\" | pino-pretty",
+    "test": "ts-mocha ./tests/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taskforcesh/bullmq-typescript.git"
+  },
+  "keywords": [
+    "bullmq"
+  ],
+  "author": "Manuel Astudillo",
+  "dependencies": {
+    "bullmq": "^1.85.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.1",
+    "ts-mocha": "^10.0.0",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.7.3"
+  }
+}
